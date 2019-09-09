@@ -6,7 +6,178 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	<header>
+		<section class="topHeader">
+			<a href="#">ТЕХНОМАРТ</a>
+			<a href="#">Поиск</a>
+			<a href="#">Закладки:</a>
+			<a href="#">Корзина:</a>
+			<a href="#">Оформить заказ</a>
+		</section>
+		<section class="info">
+			<h1>Интернет-магазин<br>
+				  строительных материалов<br>
+			    и инструментов для ремонта</h1>
+			<input type="text" name="phoneNumber">
+			<p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+		</section>
+		<section class="login">
+			<a href="#">Войти</a>
+			<a href="#">Регистрация</a>
+		</section>
+		<nav>
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="tiles">
+			<article>
+				<p>Материалы</p>
+				<a href="#">НА ЛЮБОЙ ВКУС</a>
+			</article>
+			<article>
+				<p>Инструмент</p>
+				<a href="#">НА ВСЕ СЛУЧАИ</a>
+			</article>
+			<article>
+				<p>Техника</p>
+				<a href="#">ДЛЯ СТРОЙКИ</a>
+			</article>
+			<article>
+				<p>Скидки 50%</p>
+				<a href="#">НА 350 ТОВАРОВ</a>
+			</article>
+			<article>
+				<p>Доставка</p>
+				<a href="#">БЕСПЛАТНО</a>
+			</article>
+			<article class="carousel">
+				<p>Дрели</p>
+				<span>Соседям на радость!</span>
+				<a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+				<button>Назад</button>
+				<button>Вперёд</button>
+			</article>
+		</section>
+		<article class="separator">
+			<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+			<button>ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
+		</article>
+
+		<section class="product">
+			<article>
+				<img src="#" width="100" height="100" alt="Изображение Перфоратор BOSCH BFG 9000">
+				<p>Перфоратор BOSCH<br>BFG 9000</p>
+				<span>32599 Р.</span>
+				<a href="#">25500 Р.</a>
+			</article>
+			<article>
+				<img src="#" width="100" height="100" alt="Изображение Перфоратор BOSCH BFG 3000">
+				<p>Перфоратор BOSCH<br>BFG 3000</p>
+				<span>22500 Р.</span>
+				<a href="#">15500 Р.</a>
+			</article>
+			<article>
+				<img src="#" width="100" height="100" alt="Изображение Перфоратор BOSCH BFG 6000">
+				<p>Перфоратор BOSCH<br>BFG 6000</p>
+				<span>30500 Р.</span>
+				<a href="#">25500 Р.</a>
+			</article>
+			<article>
+				<img src="#" width="100" height="100" alt="Изображение Перфоратор BOSCH BFG 2000">
+				<p>Перфоратор BOSCH<br>BFG 2000</p>
+				<span> </span>
+				<a href="#">12500 Р.</a>
+			</article>
+		</section>
+
+		<section class="separator">
+			<h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+			<button>ВСЕ ПРОИЗВОДИТЕЛИ</button>
+		</section>
+		<section class="fabricators">
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма BOSCH"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма Makita"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма DeWATLT"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма Интерскол"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма HITACHI"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма LG"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма AEG"></a>
+			<a href="#"><img src="#" width="100" height="100" alt="Изображение Фирма Metabo"></a>
+		</section>
+
+		<section class="servises">
+			<h2>СЕРВИСЫ</h2>
+			<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+			Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+			<ul>
+				<li class="active">Доставка</li>
+				<li>Гарантия</li>
+				<li>Кредит</li>
+			</ul>
+
+			<article>
+				<span>ДОСТАВКА</span>
+				<p>Мы с удовольствием доставим ваш товар приямо<br>
+					 к вашему подъезду совершенно бесплатно!<br>
+					 Ведь мы неплохо заработаем,<br>
+					 поднимая его на ваш этаж!</p>
+			</article>
+			<!-- Грузовик с тенью похож на бэкграундную картинку, поэтому игнорирую -->
+		</section>
+
+		<section>
+			<div class="aboutUs">
+				<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товара для ремонта и<br>
+				   строительства не оставит равнодумными любителей сэкономить на гастарбайтерах.</p>
+				<p>Мы можем доставить ваш товар в самые отдалённые точки России!<br>
+					<!-- на работе отдрессировали ставить "ё", не могу уже без этой буквы жить -->
+				   Техномарт работает со многими транспортными компаниями:</p>
+				<ul>
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+			</div>
+			<div class="contacts">
+				<h2>КОНТАКТЫ</h2>
+				<p>Вы можете забрать товар сами,<br>
+				   заехав в наш офис:</p>
+				<img src="#" width="200" height="100" alt="Изображение Карта проезда">
+				<a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<a href="#">ТЕХНОМАРТ</a>
+		<ul>
+			<li><a href="#">Компания</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<p>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
+			 +7 (812) 555-05-55</p>
+		<ul>
+			<li><a href="#">Материалы</a></li>
+			<li><a href="#">Техника</a></li>
+			<li><a href="#">Инструмент</a></li>
+			<li><a href="#">Спецпредложения</a></li>
+		</ul>
+	</footer>
 
   </body>
 </html>
