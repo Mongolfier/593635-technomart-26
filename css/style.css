@@ -1,0 +1,241 @@
+@font-face {
+	font-family: cuprumRegular;
+	src: url("../fonts/cuprum.woff2") format("woff2"),
+	url("../fonts/cuprum.woff") format("woff");
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: cuprumItalic;
+	src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+	url("../fonts/cuprumitalic.woff") format("woff");
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: cuprumBold;
+	src: url("../fonts/cuprumbold.woff2") format("woff2"),
+	url("../fonts/cuprumbold.woff") format("woff");
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: cuprumBoldItalic;
+	src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+	url("../fonts/cuprumbolditalic.woff") format("woff");
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: ptsans;
+	src: url("../fonts/ptsans.woff2") format("woff2"),
+	url("../fonts/ptsans.woff") format("woff");
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: ptsansBold;
+	src: url("../fonts/ptsansbold.woff2") format("woff2"),
+	url("../fonts/ptsansbold.woff") format("woff");
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	background-color: #ffffff;
+	font-family: cuprumRegular, arial, sans-serif;
+	font-size: 17px;
+}
+a { 
+	text-decoration: none 
+}
+address {
+	font-style: normal;
+}
+h1 {
+	font-family: cuprumItalic;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: normal;
+	color: #ee3643;
+}
+ul {
+	list-style-type: none;
+}
+header {
+	background-color: #f3f7f9;
+}
+header address {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+header a[href*="tel"] {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+form {
+	display: none;
+}
+.topHead {
+	background-color: #293449;
+}
+.topHead a {
+	color: #ffffff;
+}
+.topHead li:last-child {
+	background-color: #63a63e;
+}
+.logo {
+	background-color: #ee3643;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.24);
+	width: 220px;
+	text-align: center;
+}
+header .logo {
+	height: 42px;
+}
+.logo:hover {
+	background-color: #ca2c37;
+}
+footer .logo {
+	height: 63px;
+}
+
+nav {
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+}
+nav li:hover {
+	background-color:#293449;
+}
+nav a {
+	color: #ffffff;
+}
+nav a:active {
+	color: rgba(255, 255, 255, 0.502);
+}
+
+.logInOut a{
+	color: #000000;
+	font-size: 21px;
+	line-height: 21px;
+}
+.logInOut a:hover {
+	color: #ee3643;
+}
+.logInOut a:active {
+	color: rgba(0, 0, 0, 0.302);
+}
+
+.sells a {
+	color: rgb(50, 66, 92);
+}
+.sells a:active {
+	color: rgba(50, 66, 92, 0.302);
+}
+
+.promo a {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.contacts h2, .aboutUs h2 {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+}
+.contacts, .aboutUs {
+	font-size: 13px;
+	line-height: 24px;
+}
+.aboutUs li {
+	font-size: 18px;
+	line-height: 20px;
+}
+.aboutUs a, .contacts button {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.servises {
+	background-color: #f4f8f9;
+}
+.servicesPoints {
+	font-family: cuprumBold;
+	font-size: 21px;
+	line-height: 30px;
+}
+.servicesPoints a {
+	color: #ffffff;
+}
+.servicesPoints {
+	background-color: #32425c;
+}
+.servicesPoints li:not(.serviceActive):hover {
+	background-color: #293449;
+}
+.serviceActive {
+	background-color: #ffffff;
+}
+.serviceActive a {
+	color: #32425c;
+}
+
+footer {
+	background-color: #32425c;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer a:active {
+	opacity: 0.5;
+	text-decoration: none;
+}
+footer address {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+}
+.footerNav a {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+}
+footer a[href*="tel"] {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+.footerOffers a {
+	color: #ffd180;
+	font-size: 18px;
+	line-height: 24px;
+}
+footer p {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+}
+.linksFeedback {
+	color: #ffd180;
+	font-size: 16px;
+	line-height: 18px;
+}
+.botFooter {
+	background-color: #293449;
+}
+.botFooter a:active {
+	color: #ee3643;
+	opacity: 1;
+}
