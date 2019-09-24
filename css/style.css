@@ -71,7 +71,22 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.page-header {
+.top-head {
+  height: 42px;
+}
+
+.top-head, .main-head {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.blue-background-header {
+  width: 100%;
+  background-color: #32425c;
+}
+
+.grey-background-header {
+  width: 100%;
   background-color: #f3f7f9;
 }
 
@@ -105,10 +120,6 @@ form {
   display: none;
 }
 
-.top-head {
-  background-color: #293449;
-}
-
 .top-head a {
   color: #ffffff;
 }
@@ -135,9 +146,10 @@ form {
 .navigation {
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+  display: flex;
 }
 
-.navigation li:hover {
+.navigation a:hover {
   background-color:#293449;
 }
 
@@ -149,16 +161,14 @@ form {
   color: rgba(255, 255, 255, 0.502);
 }
 
-.navigation .nav-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li {
+.navigation a {
   display: inline-block;
   height: 55px;
   vertical-align: middle;
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 18px;
+  box-sizing: border-box;
 }
 
 .log-in-out a{
@@ -181,7 +191,11 @@ form {
   background-color: #ee3643;
 }
 
-.sells a {
+.sells-item {
+
+}
+
+.sells-list a {
   color: rgb(50, 66, 92);
   background-color: #ffffff;
   border-style: solid;
@@ -189,7 +203,7 @@ form {
   border-width: 3px;
 }
 
-.sells a:active {
+.sells-list a:active {
   color: rgba(50, 66, 92, 0.302);
 }
 
@@ -197,6 +211,11 @@ form {
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .promo ul {
@@ -301,7 +320,10 @@ form {
 .criterion-sorting-list,
 .order-list,
 .catalog-perforators-list,
-.pagination-list {
+.pagination-list,
+.sells-list,
+.promo-listб
+.fabricators-logo-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -314,7 +336,10 @@ form {
 .criterion-sorting-list li,
 .order-list li,
 .catalog-perforators-list li,
-.pagination-list li {
+.pagination-list li,
+.sells-list li,
+.promo-list li,
+.fabricators-logo-list li {
   display: inline-block;
 }
 
@@ -412,6 +437,11 @@ form {
   border-width: 1px;
 }
 
+.catalog-perforators-item a {
+  font-size: 14px;
+  color: #32425c;
+}
+
 .abour-perforators {
   background-color: #f2f6f8;
 }
@@ -422,7 +452,7 @@ form {
 }
 
 .abour-perforators p {
-  font-size: 15px; /*  !!!!!!!!!!!!!!!!!! ПОКА НЕИЗВЕСТНО */
+  font-size: 13px;
 }
 
 .pagination-list a {
@@ -440,11 +470,34 @@ form {
   height: 38px;
 }
 
-.catalog-page-footer {
-  background-color: #32425c;
+.servises-item p {
+  font-family: ptsans;
+}
+
+.sells-item {
+  font-family: ptsans;
+  font-weight: 700;
+}
+
+.promo-item p {
+  font-weight: 700;
   color: #ffffff;
 }
 
-.catalog-page-footer .logo {
-  height: 63px;
+.carousel p {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.carousel {
+  color: #ffffff;
+}
+
+.footer-wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
 }
