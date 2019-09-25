@@ -47,9 +47,9 @@
   font-style: normal;
 }
 
-html {
+body {
   background-color: #ffffff;
-  font-family: cuprum, arial, sans-serif;
+  font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -408,7 +408,7 @@ form {
 .breadcrumb-item a {
   text-decoration: none;
   color: #000000;
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -420,7 +420,7 @@ form {
 }
 
 .heading-sorting p {
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -453,7 +453,7 @@ form {
 .pagination-list a {
   display: flex;
   text-decoration: none;
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -466,11 +466,11 @@ form {
 }
 
 .servises-item p {
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
 }
 
 .sells-item {
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-weight: 700;
 }
 
@@ -521,20 +521,20 @@ form {
 }
 
 .filters h3 {
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
 }
 
 .criterion-sorting-item button {
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
 .filters p {
-  font-family: ptsans;
+  font-family: "ptsans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
