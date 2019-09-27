@@ -1118,3 +1118,69 @@ input[type="search"]:focus {
 .communication p {
   margin: 0;
 }
+
+.service-information {
+  position: relative;
+  margin: 70px 0 54px 0;
+  padding-bottom: 102px;
+}
+
+.service-navigation input {
+  display: none;
+}
+
+.service-navigation label {
+  display: flex;
+  width: 217px;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 11px 0 17px 23px;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+  background-color: #32425c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.services-content {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 620px;
+  padding-bottom: 139px;
+}
+
+#btn-radio-delivery:checked ~ .slider .services-content:nth-child(1),
+#btn-radio-garantee:checked ~ .slider .services-content:nth-child(2),
+#btn-radio-credite:checked ~ .slider .services-content:nth-child(3) {
+  display: block;
+}
+
+#btn-radio-delivery:checked ~ label[for="btn-radio-delivery"],
+#btn-radio-garantee:checked ~ label[for="btn-radio-garantee"],
+#btn-radio-credite:checked ~ label[for="btn-radio-credite"] {
+  color: #32425c;
+  background: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.slider h2 {
+  margin: 0 0 34px 0;
+  padding: 0;
+}
+
+.services-content p {
+  font-family: ptsans;
+  font-size: 13px;
+  line-height: 24px;
+  width: 275px
+}
+
+.services-content img {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
