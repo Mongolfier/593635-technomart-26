@@ -420,14 +420,6 @@ form {
   line-height: 18px;
 }
 
-.link-soc {
-  list-style-type: none;
-}
-
-.link-soc li {
-  display: inline;
-}
-
 .bot-footer {
   background-color: #293449;
 }
@@ -591,13 +583,6 @@ form {
 
 .sells-item:last-child .price {
   margin-top: 30px;
-}
-
-.promo-item p {
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .carousel {
@@ -854,20 +839,49 @@ input[type="search"]:focus {
   margin-bottom: 20px;
 }
 
+.card h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 21px 0 12px 23px;
+}
+
+.card a {
+  width: 135px;
+  height: 38px;
+  margin: 0 0 25px 22px;
+  background-color: rgba(229,229,229,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
 .materials {
   position: relative;
   margin-right: 20px;
   background-color: #f6b22d;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 210px, 20px; 
 }
 
 .instruments {
   position: relative;
   margin-right: 20px;
   background-color: #4aafde;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 205px, 20px; 
 }
 
 .equipment {
   background-color: #cc79d1;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 190px, 20px; 
 }
 
 .addons-card {
@@ -880,11 +894,17 @@ input[type="search"]:focus {
 .sale {
   margin-left: 20px;
   background-color: #85d179;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 200px, 20px; 
 }
 
 .delivery {
   margin-left: 20px;
   background-color: #f6b22d;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 190px, 20px; 
 }
 
 .popular-blog {
@@ -1093,7 +1113,7 @@ input[type="search"]:focus {
 }
 
 .copyright {
-  width: 230px;
+  min-width: 230px;
 }
 
 .link-soc {
@@ -1101,7 +1121,17 @@ input[type="search"]:focus {
   justify-content: space-between;
   width: 130px;
   margin: 0 120px 0 161px;
-  background-color: red;
+}
+
+.link-soc a {
+  display: flex;
+  background-color: #212a3a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .communication {
@@ -1110,7 +1140,7 @@ input[type="search"]:focus {
 }
 
 .developed {
-  width: 140px;
+  min-width: 140px;
   margin-right: 48px;
 }
 
@@ -1183,4 +1213,95 @@ input[type="search"]:focus {
   position: absolute;
   top: 20px;
   right: 0;
+}
+
+.write-us {
+  display: block;
+  position: fixed;
+  width: 620px;
+  left: 50%;
+  top: 15%;
+  margin-left: -310px;
+  border-top: 7px solid #ee3643;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #fff;
+  box-shadow: 0 20px 40px 10px;
+  z-index: 999;
+}
+
+.close-popup {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup-main {
+  width: 460px;
+  padding: 48px 80px 0px;
+}
+
+.top-popup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-popup-fragment {
+  width: 220px;
+  margin-bottom: 22px;
+}
+
+.top-popup-fragment input {
+  width: 188px;
+  padding: 0 14px;
+  height: 34px;
+  border: 2px solid #d7dcde;
+  font: 13px/18px "PT Sans","Arial",sans-serif;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+.letter {
+  width: 428px;
+  height: 102px;
+  padding: 8px 14px 0px;
+  margin-top: 8px;
+  margin-bottom: 33px;
+  border: 2px solid #d7dcde;
+  font: 13px/18px "PT Sans","Arial",sans-serif;
+  border-radius: 4px;
+  resize: none;
+}
+
+.send-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: #f1f1f1;
+}
+
+.send-mail button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 460px;
+  margin: 0;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3%;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.hide-modal {
+  display: none;
+}
+
+.big-map {
+  display: none;
 }
