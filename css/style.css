@@ -84,7 +84,6 @@ input[type="radio"].visually-hidden {
 .criterion-sorting-list,
 .order-list,
 .catalog-perforators-list,
-.pagination-list,
 .sells-list,
 .promo-list,
 .fabricators-logo-list {
@@ -99,7 +98,6 @@ input[type="radio"].visually-hidden {
 .criterion-sorting-list li,
 .order-list li,
 .catalog-perforators-list li,
-.pagination-list li,
 .sells-list li,
 .promo-list li,
 .fabricators-logo-list li {
@@ -514,9 +512,8 @@ form {
   border-width: 1px;
 }
 
-.catalog-perforators-item a {
-  font-size: 14px;
-  color: #32425c;
+.catalog-perforators-item:hover {
+  box-shadow: 0 0 10px #aeb2ba;
 }
 
 .abour-perforators {
@@ -530,21 +527,6 @@ form {
 
 .abour-perforators p {
   font-size: 13px;
-}
-
-.pagination-list a {
-  display: flex;
-  text-decoration: none;
-  font-family: "ptsans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  color: #000000;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #e5e5e5;
-  border-radius: 4px;
-  width: 38px;
-  height: 38px;
 }
 
 .servises-item p {
@@ -1738,12 +1720,192 @@ a.private-office {
   border-bottom: 10px solid #ee3643;
 }
 
+.tri-up:hover {
+  border-bottom: 10px solid #000000;
+}
+
 .tri-down {
   border-top: 10px solid #c6c2bd;
+}
+
+.tri-down:hover {
+  border-top: 10px solid #000000;
 }
 
 .catalog-perforators-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.catalog-perforators-item {
+  margin-bottom: 20px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 218px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.catalog-perforators-item:hover .buy-menu {
+  display: block;
+}
+
+.catalog-perforators-item img {
+  border-style: none;
+}
+
+.catalog-perforators-item p {
+  font: 18px/20px "ptsans", "Arial", sans-serif;
+  font-weight: 700;
+  margin: auto 25px;
+  color: #000000;
+}
+
+.catalog-perforators-item del {
+  color: #999999;
+  display: flex;
+  justify-content: center;
+  font: bold 17px/18px "ptsans", "Arial", sans-serif;
+  margin: 11px 0;
+}
+
+.price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 133px;
+  height: 38px;
+  font: bold 17px/18px "ptsans","Arial",sans-serif;
+  margin: 0 auto 20px;
+  border-radius: 3%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.price::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -26px;
+  border: 19px solid #ffffff;
+  border-left-color: #ffffff;
+  border-left-color: #ee3643;
+}
+
+.no-discount {
+  margin-top: 40px;
+}
+
+.buy-menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 135px;
+    height: 84px;
+    padding: 41px;
+    background: #ffffff;
+}
+
+.btn-buy {
+  margin-bottom: 8px;
+  height: 38px;
+  box-shadow: inset 0 -3px 0 #367315;
+  background-color: #63a63e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+  background-color: #518534;
+  box-shadow: inset 0 -3px 0 #518534;
+}
+
+.btn-bookmark {
+  height: 32px;
+  border: 3px solid #63a63e;
+  background-color: #ffffff;
+  color: #32425c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #32425c;
+  text-decoration: none;
+}
+
+.btn-bookmark:hover {
+  border: 3px solid #32425c;
+  color: #32425c;
+}
+
+.btn-bookmark:active {
+  border: 3px solid #c1c6ce;
+  color: #c1c6ce;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  width: 285px;
+  display: flex;
+  justify-content: space-between;
+  margin: 33px 0 30px 0;
+  list-style-type: none;
+}
+
+.pagination-item a {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5%;
+  font: 13px/18px "ptsans", "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+}
+
+.pagination-item:last-child a {
+  width: 140px;
+}
+
+.pagination-item.active a {
+  background-color: #ee3643;
+  color: #ffffff;
+  border: 1px solid #ee3643;
+}
+
+.abour-perforators {
+  background-color: #f2f6f8;
+  padding-bottom: 56px;
+}
+
+.abour-perforators h2 {
+  padding-top: 69px;
+  font-size: 30px;
+  line-height: 24px;
+  margin: 28px 0;
+  color: #000000;
+  font-weight: normal;
+}
+.abour-perforators p {
+  font: 13px/24px "ptsans", "Arial", sans-serif;
+  color: #000000;
 }
