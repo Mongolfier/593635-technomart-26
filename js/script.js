@@ -15,14 +15,15 @@ for( var i = 0; i < modalMap.length; i++) {
   }
 }
 
-// переключение навигации (доставка/гарантия/кредит)
+// переключение навигации (доставка/гарантия/кредит) 
 var serviceNav = document.getElementsByClassName("btn-service");
 for( var i = 0; i < serviceNav.length; i++) {
   serviceNav[i].onclick = function(event) {
 
-    var numberPointNav = document.querySelectorAll(".service-information span").length;
+    console.log(document.querySelectorAll(".service-navigation span").indexOf(event.target)); //!!!!!!!!!!!!!!
+    var numberPointNav = document.querySelectorAll(".service-navigation span").length;
     for( var i = 0; i < numberPointNav; i++ ) {
-      document.querySelectorAll(".service-information span")[i].classList.remove("active");
+      document.querySelectorAll(".service-navigation span")[i].classList.remove("active");
     }
 
     event.target.classList.add("active");
