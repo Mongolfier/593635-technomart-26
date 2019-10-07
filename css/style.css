@@ -311,7 +311,7 @@ form {
 .about-us a:hover,
 .contacts button:hover {
   background-color: #ca2c37;
-} 
+}
 
 .fabricators a {
   text-decoration: none;
@@ -533,6 +533,10 @@ form {
   box-shadow: 0 0 10px #aeb2ba;
 }
 
+.sells-item:hover {
+  box-shadow: 0 0 10px #aeb2ba;
+}
+
 .sells-item p {
   margin: auto 25px;
 }
@@ -744,10 +748,6 @@ form {
   background-color: #32425c;
 }
 
-.search-input::-ms-clear {
-  display: none;
-}
-
 .search-list:hover svg {
   fill: rgba(255, 255, 255, 1);
 }
@@ -933,14 +933,14 @@ form {
   background-color: #4aafde;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  background-position: 205px, 20px; 
+  background-position: 205px, 20px;
 }
 
 .equipment {
   background-color: #cc79d1;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
-  background-position: 190px, 20px; 
+  background-position: 190px, 20px;
 }
 
 .addons-card {
@@ -955,7 +955,7 @@ form {
   background-color: #85d179;
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
-  background-position: 200px, 20px; 
+  background-position: 200px, 20px;
 }
 
 .delivery {
@@ -963,7 +963,7 @@ form {
   background-color: #f6b22d;
   background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
-  background-position: 190px, 20px; 
+  background-position: 190px, 20px;
 }
 
 .popular-blog {
@@ -1308,10 +1308,10 @@ form {
 }
 
 .btn-service:nth-child(1).active ~ .slider .services-content:nth-child(1),
-.btn-service:nth-child(2).active ~ .slider .services-content:nth-child(2), 
-.btn-service:nth-child(3).active ~ .slider .services-content:nth-child(3) { 
+.btn-service:nth-child(2).active ~ .slider .services-content:nth-child(2),
+.btn-service:nth-child(3).active ~ .slider .services-content:nth-child(3) {
   display: block;
-} 
+}
 
 .slider h2 {
   margin: 0 0 34px 0;
@@ -1328,7 +1328,7 @@ form {
 .services-content h2 {
   font-size: 36px;
   line-height: 24px;
-} 
+}
 
 .write-us {
   display: none;
@@ -1723,7 +1723,6 @@ a.private-office:active {
 .fabricators-list input[type="checkbox"] {
   opacity: 0;
   position: absolute;
-  /*display: none;*/
 }
 
 .fabricators-list label::before,
@@ -1968,13 +1967,13 @@ a.private-office:active {
 }
 
 .buy-menu {
-    position: absolute;
-    display: none;
-    top: 0;
-    width: 135px;
-    height: 84px;
-    padding: 41px;
-    background: #ffffff;
+  position: absolute;
+  display: none;
+  top: 0;
+  width: 135px;
+  height: 84px;
+  padding: 41px;
+  background: #ffffff;
 }
 
 .btn-buy {

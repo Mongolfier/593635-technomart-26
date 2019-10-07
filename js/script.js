@@ -2,7 +2,7 @@
 var toggleModal = function(className) {
   var toggledElem = document.querySelector(className);
   if( !toggledElem.classList.contains("show-modal") ) {
-    toggledElem.classList.add("show-modal") 
+    toggledElem.classList.add("show-modal")
   } else {
     toggledElem.classList.remove("show-modal");
   }
@@ -17,7 +17,7 @@ for( var i = 0; i < modalMap.length; i++) {
   }
 }
 
-// переключение навигации (доставка/гарантия/кредит) 
+// переключение навигации (доставка/гарантия/кредит)
 var serviceNav = document.querySelectorAll(".btn-service");
 
 for( var i = 0; i < serviceNav.length; i++) {
