@@ -47,6 +47,10 @@
   font-style: normal;
 }
 
+*:focus {
+  outline: 1px dotted #000000;
+}
+
 body {
   background-color: #ffffff;
   font-family: "cuprum", "Arial", sans-serif;
@@ -74,7 +78,6 @@ input[type="radio"].visually-hidden {
 .footer-nav,
 .footer-offers,
 .criterion-sorting-list,
-.catalog-perforators-list,
 .sells-list,
 .fabricators-logo-list {
   margin: 0;
@@ -85,7 +88,6 @@ input[type="radio"].visually-hidden {
 .footer-nav li,
 .footer-offers li,
 .criterion-sorting-list li,
-.catalog-perforators-list li,
 .sells-list li,
 .fabricators-logo-list li {
   display: inline-block;
@@ -454,25 +456,24 @@ form {
   color: #797672;
 }
 
-.breadcrumb-list {
-  list-style-type: none;
+.breadcrumbs {
   width: 373px;
   display: flex;
   justify-content: space-around;
   padding: 21px 0;
-  margin: 0;
 }
 
-.breadcrumb-item a {
-  text-decoration: none;
-  color: #000000;
-  font-family: "ptsans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+.breadcrumbs a:hover {
+  color: #ee3643;
+  text-decoration: underline;
 }
 
-.breadcrumb-item {
+.breadcrumbs a, .breadcrumbs span {
   position: relative;
+  color: #000000;
+  font: 13px/18px "ptsans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .catalog-main-heading h1 {
@@ -527,6 +528,7 @@ form {
   border: 1px solid #e5e5e5;
   text-align: center;
   overflow: hidden;
+  min-height: 313px;
 }
 
 .sells-item:hover {
@@ -535,6 +537,10 @@ form {
 
 .sells-item:hover {
   box-shadow: 0 0 10px #aeb2ba;
+}
+
+.sells-item:focus .sell-hover {
+  display: block;
 }
 
 .sells-item p {
@@ -624,12 +630,12 @@ form {
   width: 620px;
   height: 266px;
   position: relative;
-  background-image: url("../img/drill1.jpg");
+  background-image: url("../img/drill2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.clide-control {
+.slide-control {
   position: absolute;
   bottom: 35px;
   left: 48%;
@@ -885,7 +891,7 @@ form {
 
 .card {
   width: 300px;
-  height: 123px;
+  /*height: 123px;*/
   margin-bottom: 20px;
 }
 
@@ -900,7 +906,7 @@ form {
 .card a {
   width: 135px;
   height: 38px;
-  margin: 0 0 25px 22px;
+  margin: 0 0 22px 22px;
   background-color: rgba(229,229,229,0.1);
   display: flex;
   justify-content: center;
@@ -1003,7 +1009,7 @@ form {
 
 .sell-hover {
   position: absolute;
-  display: none;
+  /*display: none;*/
   top: 0;
   width: 135px;
   height: 84px;
@@ -1345,6 +1351,42 @@ form {
   z-index: 999;
 }
 
+.add-to-basket {
+  display: none;
+  position: fixed;
+  width: 620px;
+  left: 50%;
+  top: 15%;
+  margin-left: -310px;
+  border-top: 7px solid #ee3643;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 40px 20px 0px rgba(0,0,0, 0.5);
+  z-index: 999;
+}
+
+.caption-modal {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 100px;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.caption-modal::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: -100px;
+  top: -22px;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .close-popup {
   background: none;
   border: none;
@@ -1369,12 +1411,17 @@ form {
   margin-bottom: 22px;
 }
 
+.top-popup-fragment input:focus,
+.letter:focus {
+  border: 2px solid #0099FF;
+}
+
 .top-popup-fragment input {
   width: 188px;
   padding: 0 14px;
   height: 34px;
   border: 2px solid #d7dcde;
-  font-size: : 13px;
+  font-size: 13px;
   line-height: 18px;
   font-family: "ptsans","Arial", sans-serif;
   margin-top: 8px;
@@ -1388,7 +1435,7 @@ form {
   margin-top: 8px;
   margin-bottom: 33px;
   border: 2px solid #d7dcde;
-  font-size: : 13px;
+  font-size: 13px;
   line-height: 18px;
   font-family: "ptsans","Arial", sans-serif;
   border-radius: 4px;
@@ -1399,23 +1446,36 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 112px;
   background-color: #f1f1f1;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 0 80px;
 }
 
 .send-mail button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 38px;
+  margin: 37px 0 37px 0;
+  padding: 12px;
   width: 460px;
-  margin: 0;
   border: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
+  line-height: 14px;
   border-radius: 3%;
   text-transform: uppercase;
   background-color: #ee3643;
+  cursor: pointer;
+}
+
+.send-mail button:hover {
+  background-color: #ca2c37;;
 }
 
 .show-modal {
@@ -1526,23 +1586,22 @@ a.private-office:active {
 .link-home::before {
   content: "";
   position: absolute;
-  left: -25px;
-  top: 13px;
-  width: 20px;
-  height: 20px;
+  left: -20px;
+  top: 0;
+  width: 15px;
+  height: 18px;
   background-image: url("../img/icon-home.svg");
-  /*background-size: 100% 100%;*/
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100% 50%;
 }
 
 .link-home::after {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 10px;
-  width: 25px;
-  height: 25px;
+  left: 7px;
+  top: 0px;
+  width: 15px;
+  height: 18px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1712,36 +1771,52 @@ a.private-office:active {
   color: #000000;
 }
 
-.fabricators-list label:hover {
-  opacity: 1;
-}
-
-.fabricators-list input:focus + label {
+.fabricators-list input:focus + label::before {
   outline: 1px dotted #000000;
 }
 
-.fabricators-list input[type="checkbox"] {
+.checkbox {
   opacity: 0;
   position: absolute;
 }
 
 .fabricators-list label::before,
-.fabricators-list input[type="checkbox"]:checked + label::before  {
+.checkbox:checked + label::before {
   content: "";
   position: absolute;
-  width: 27px;
+  width: 23px;
   height: 23px;
   top: 0;
   left: -30px;
   background-repeat: no-repeat;
+  opacity: 0.8;
 }
 
 .fabricators-list label::before {
+/* очень хотелось сделать рамки на CSS а саму галочку уже кратинкой */
+/* но из-за разного размера картинки checked и не checked пришлось отказаться */
   background-image: url("../img/checkbox-off.svg");
 }
 
-.fabricators-list input[type="checkbox"]:checked + label::before {
+.checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
+  width: 27px;
+}
+
+.checkbox:disabled + label::before,
+.checkbox:disabled + label {
+  opacity: 0.5;
+}
+
+.checkbox:disabled:hover + label::before,
+.checkbox:disabled:hover + label {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.checkbox:hover + label,
+.checkbox:hover + label::before {
+  opacity: 1;
 }
 
 .type-charge {
@@ -1909,7 +1984,7 @@ a.private-office:active {
   position: relative;
   flex-direction: column;
   align-items: center;
-  width: 218px;
+  min-width: 218px;
   border: 1px solid #e5e5e5;
   text-align: center;
 }
@@ -1927,6 +2002,7 @@ a.private-office:active {
   font-weight: 700;
   margin: auto 25px;
   color: #000000;
+  width: 168px;
 }
 
 .catalog-perforators-item del {
@@ -1942,8 +2018,8 @@ a.private-office:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 133px;
-  height: 38px;
+  min-width: 133px;
+  /*height: 38px;*/
   font: bold 17px/18px "ptsans","Arial",sans-serif;
   margin: 0 auto 20px;
   border-radius: 3%;
@@ -1963,12 +2039,12 @@ a.private-office:active {
 }
 
 .no-discount {
-  margin-top: 40px;
+  margin-top: 29px;
 }
 
 .buy-menu {
   position: absolute;
-  display: none;
+  /*display: none;*/
   top: 0;
   width: 135px;
   height: 84px;
@@ -2118,4 +2194,30 @@ a.private-office:active {
   font-family: "ptsans";
   font-weight: normal;
   transform: rotate(45deg);
+}
+
+.checkout button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 460px;
+  border: none;
+  line-height: 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.issue-order {
+  margin: 37px 20px 37px 0;
+  color: #ffffff;  
+  background-color: #ee3643;
+}
+
+.continue-shopping {
+  margin: 37px 0 37px 0;
+  color: #000000;
+  background-color: #ffffff;
 }
