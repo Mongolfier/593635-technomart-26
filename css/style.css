@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header {
-  margin-bottom: 70px;
+  margin-bottom: 59px;
 }
 
 .page-header a,
@@ -149,12 +149,8 @@ input[type="radio"].visually-hidden {
 .page-header a[href*="tel"],
 .page-header-catalog a[href*="tel"] {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 18px;
   color: #ee3643;
-}
-
-form {
-  /*display: none;*/
 }
 
 .top-head a {
@@ -209,7 +205,7 @@ form {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 38px;
-  padding: 0 23px 0 23px;
+  padding: 0 22px 0 22px;
 }
 
 .navigation a:hover {
@@ -218,7 +214,7 @@ form {
 
 .navigation a {
   color: #ffffff;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 .navigation a:active {
@@ -261,14 +257,14 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   margin-bottom: 20px;
 }
 
 .promo {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .promo a {
@@ -288,6 +284,7 @@ form {
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
+  letter-spacing: -0.007em;
 }
 
 .contacts,
@@ -326,7 +323,7 @@ form {
 
 .servises h2 {
   padding-top: 68px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 400;
@@ -496,6 +493,12 @@ form {
   border-width: 1px;
 }
 
+.catalog-perforators-item img {
+  width: 218px;
+  height: 170px;
+  background-color: powderblue;
+}
+
 .catalog-perforators-item:hover {
   box-shadow: 0 0 10px #aeb2ba;
 }
@@ -545,13 +548,16 @@ form {
 
 .sells-item p {
   margin: auto 25px;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 .sells-item del {
   display: flex;
   justify-content: center;
-  margin: 11px 0;
-  color: #999;
+  margin-top: 11px;
+  margin-bottom: 8px;
+  color: #999999;
 }
 
 .price {
@@ -579,57 +585,70 @@ form {
 }
 
 .sells-item:last-child .price {
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .carousel {
   color: #ffffff;
   position: relative;
+  min-width: 620px;
 }
 
 .slider-back,
 .slider-forward {
   position: absolute;
-  height: 266px;
+  height: 50px;
   width: 50px;
+  border-radius: 50%;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
-  /*top: 0;*/
-  z-index: 0;
+  top: 110px;
+  background-color: transparent;
+  z-index: 1;
   cursor: pointer;
-}
-
-.slider-forward {
-  right: 0;
-}
-
-.slider-forward:hover {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100% );
-}
-.slider-forward:hover path {
-  stroke-opacity: 0.8;
-}
-
-.slider-forward:active {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100% );
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-back {
-  left: 0;
+  background-image: url("../img/icon-left.svg");
+  left: 10px;
 }
 
-.slider-back:hover {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100% );
+.slider-forward {
+  background-image: url("../img/icon-right.svg");
+  right: 5px;
 }
 
-.slider-back:hover {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100% );
+.slider-back:hover,
+.slider-forward:hover {
+  box-shadow: 0 0 10px black;
+}
+
+.slider-back:active,
+.slider-forward:active {
+  box-shadow: 0 0 5px black;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .slide-one {
+  display: none;
   width: 620px;
   height: 266px;
-  position: relative;
+  top: 0;
+  position: absolute;
+  background-image: url("../img/drill1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-two {
+  display: none;
+  width: 620px;
+  height: 266px;
+  top: 0;
+  position: absolute;
   background-image: url("../img/drill2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -637,12 +656,12 @@ form {
 
 .slide-control {
   position: absolute;
-  bottom: 35px;
-  left: 48%;
   display: flex;
   justify-content: space-between;
   width: 30px;
   height: 10px;
+  left: 295px;
+  bottom: 35px;
 }
 
 .btn-slide-control.active {
@@ -661,18 +680,21 @@ form {
 .carousel span {
   line-height: 24px;
   font-size: 18px;
-  margin-left: 20px;
+  margin-left: 22px;
   z-index: 10;
+  display: block;
+  margin-top: 2px;
 }
 
 .carousel p {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  padding-top: 26px;
-  padding-left: 20px;
+  padding-top: 22px;
+  padding-left: 22px;
   margin: 0;
   z-index: 10;
+  display: block;
 }
 
 .carousel a {
@@ -760,11 +782,6 @@ form {
 
 .search-input:focus ~ svg {
   fill: #ee3643;
-}
-
-.search-input:hover {
-  background-color: #212a3a;
-  fill: red;
 }
 
 .search-input:focus {
@@ -860,11 +877,13 @@ form {
   border-style: solid;
   border-color: #ffffff;
   padding: 10.5px 50px 10.5px 72px;
+  line-height: 18px;
 }
 
 .phone svg {
   position: absolute;
-  left: 18px;
+  left: 16px;
+  top: 13px;
 }
 
 .login {
@@ -905,48 +924,50 @@ form {
 
 .card a {
   width: 135px;
-  height: 38px;
-  margin: 0 0 22px 22px;
-  background-color: rgba(229,229,229,0.1);
+  /*height: 38px;*/
+  margin: 0 0 22px 25px;
+  background-color: rgba(0,0,0,0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  line-height: 38px; 
   border-radius: 4px;
 }
 
 .card a:hover {
-  background-color: rgba(229,229,229,0.2);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .card a:active {
-  background-color: rgba(229,229,229,0.3);
+  background-color: rgba(0,0,0,0.3);
 }
 
 .materials {
   position: relative;
   margin-right: 20px;
-  background-color: #f6b22d;
+  background-color: #ffbf47;
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
-  background-position: 210px, 20px;
+  background-position: 213px 31px;
+  background-size: 44px, 56px;
   overflow: hidden;
 }
 
 .instruments {
   position: relative;
   margin-right: 20px;
-  background-color: #4aafde;
+  background-color: #3bbce3;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  background-position: 205px, 20px;
+  background-position: 197px 33px;
 }
 
 .equipment {
-  background-color: #cc79d1;
+  background-color: #dc91d8;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
-  background-position: 190px, 20px;
+  background-position: 191px 31px;
 }
 
 .addons-card {
@@ -958,18 +979,18 @@ form {
 
 .sale {
   margin-left: 20px;
-  background-color: #85d179;
+  background-color: #8ed78f;
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
-  background-position: 200px, 20px;
+  background-position: 196px 26px;
 }
 
 .delivery {
   margin-left: 20px;
-  background-color: #f6b22d;
+  background-color: #ffc047;
   background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
-  background-position: 190px, 20px;
+  background-position: 191px 32px;
 }
 
 .popular-blog {
@@ -982,7 +1003,7 @@ form {
 }
 
 .popular-blog h2 {
-  margin: 28px;
+  margin-left: 28px;
   font-size: 30px;
   line-height: 30px;
   padding: 6px 0;
@@ -1048,10 +1069,11 @@ form {
 }
 
 .about-servises {
-  width: 400px;
+  width: 410px;
   font-family: "ptsans","Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.007em;
 }
 .about-company {
   display: flex;
@@ -1065,7 +1087,7 @@ form {
 
 .about-us h2 {
   font-size: 30px;
-  line-height: 24px;
+  line-height: 26px;
   margin: 28px 0;
   color: #000;
   font-weight: normal;
@@ -1075,6 +1097,9 @@ form {
   font-family: "ptsans","Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.017em;
+  margin-top: 25px;
+  display: block;
 }
 
 .transport {
@@ -1129,7 +1154,7 @@ form {
 
 .contacts button {
   width: 300px;
-  margin-top: 32px;
+  margin-top: 35px;
   height: 38px;
   margin-right: 25px;
   display: flex;
@@ -1169,7 +1194,8 @@ form {
 .left-contacts address {
   color: #f1f5f7;
   font-size: 18px;
-  margin-top: 33px;
+  margin-top: 31px;
+  letter-spacing: 0.02em;
   font-style: normal;
 }
 
@@ -1211,6 +1237,7 @@ form {
 
 .copyright {
   min-width: 230px;
+  letter-spacing: 0.001em;
 }
 
 .link-soc {
@@ -1257,6 +1284,16 @@ form {
   position: relative;
   margin: 70px 0 54px 0;
   padding-bottom: 102px;
+}
+
+.service-navigation::after {
+  content: "";
+  width: 10px;
+  height: 280px;
+  position: absolute;
+  background-image: url("../img/shadow.png");
+  top: -50px;
+  left: 230px;
 }
 
 .service-navigation input {
@@ -1328,12 +1365,40 @@ form {
   font-family: "ptsans","Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  width: 275px
+}
+
+.text-services-delivery {
+  width: 275px;
+}
+
+.text-services-garantee {
+  width: 390px;
+}
+
+.text-services-credit {
+  width: 290px;
+  margin-bottom: 20px;
+}
+
+.send-request {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 38px;
+  margin-right: 25px;
+  background-color: #ee3643;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .services-content h2 {
   font-size: 36px;
   line-height: 24px;
+  letter-spacing: 0.007em;
 }
 
 .write-us {
@@ -1476,10 +1541,6 @@ form {
 
 .send-mail button:hover {
   background-color: #ca2c37;;
-}
-
-.show-modal {
-  display: block;
 }
 
 .big-map {
@@ -1674,9 +1735,10 @@ a.private-office:active {
 }
 
 .caption-cost {
-  margin-bottom: 14px;
-  margin-top: 10px;
-  font: 17px/30px "ptsans","Arial",sans-serif;
+  margin-bottom: 18px;
+  margin-top: 0;
+  font: 17px/17px "ptsans", "Arial", sans-serif;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -1684,17 +1746,26 @@ a.private-office:active {
   position: relative;
   height: 80px;
   margin: 10px 0;
-  padding: 0px 40px;
+  padding: 0px 20px;
   overflow: hidden;
   background: #f7f3ec;
 }
 
-.slider-range {
+.slider-range-gray {
   display: block;
   margin-top: 39px;
   height: 2px;
-  background: #00ca74;
+  background: #d7dcde;
   width: 100%;
+}
+
+.slider-range-green {
+  display: block;
+  position: absolute;
+  top: 39px;
+  height: 2px;
+  background: #00ca74;
+  width: 70%;
 }
 
 .left-circle,
@@ -1749,11 +1820,14 @@ a.private-office:active {
 
 .fabricators-catalog legend {
   position: absolute;
-  top: 14px;
+  top: 17px;
+  left: -3px;
   margin-bottom: 14px;
   font: 17px/30px "ptsans", "Arial", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   color: #000000;
+  letter-spacing: 0.001em;
 }
 
 .fabricators-list label {
@@ -1764,7 +1838,7 @@ a.private-office:active {
   padding: 0;
   opacity: 0.8;
   position: relative;
-  margin: 0 0 20px 35px;
+  margin: 0 0 20px 33px;
   font: 15px/20px "ptsans", "Arial", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
@@ -1773,6 +1847,10 @@ a.private-office:active {
 
 .fabricators-list input:focus + label::before {
   outline: 1px dotted #000000;
+}
+
+.fabricators-list {
+  margin-top: 3px;
 }
 
 .checkbox {
@@ -1787,9 +1865,9 @@ a.private-office:active {
   width: 23px;
   height: 23px;
   top: 0;
-  left: -30px;
+  left: -35px;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .fabricators-list label::before {
@@ -1827,12 +1905,17 @@ a.private-office:active {
   padding: 0;
   border: none;
   margin-bottom: 59px;
+  position: relative;
+  padding-top: 59px;
 }
 
 .type-charge legend {
   margin: 14px 0 14px 0;
   font: 17px/30px "ptsans", "Arial", sans-serif;
   color: #000000;
+  font-weight: bold;
+  top: 3px;
+  position: absolute;
 }
 
 .type-charge input[type="radio"] {
@@ -1883,8 +1966,8 @@ a.private-office:active {
   width: 138px;
   height: 38px;
   background: #fff;
-  font-family: "ptans", "Arial", sans-serif;
-  font-size: 14px;
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 13px;
   border: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
@@ -2001,6 +2084,7 @@ a.private-office:active {
   font: 18px/20px "ptsans", "Arial", sans-serif;
   font-weight: 700;
   margin: auto 25px;
+  margin-top: 4px;
   color: #000000;
   width: 168px;
 }
@@ -2161,18 +2245,20 @@ a.private-office:active {
 .abour-perforators p {
   font: 13px/24px "ptsans", "Arial", sans-serif;
   color: #000000;
+  letter-spacing: 0.007em;
 }
 
 .delivery-frame {
-  background-image: url("../img/serviceDelivery.png");
+  background-image: url("../img/service-delivery.png");
+  background-position: right 20px;
 }
 
 .garantee-frame {
-  background-image: url("../img/serviceGarantee.png");
+  background-image: url("../img/service-garantee.png");
 }
 
 .credit-frame {
-  background-image: url("../img/serviceCredit.png");
+  background-image: url("../img/service-credit.png");
 }
 
 .services-content.show-modal {
@@ -2185,13 +2271,15 @@ a.private-office:active {
   display: flex;
   justify-content: center;
   background: #ee3643;
-  line-height: 30px;
+  line-height: 23px;
   padding-bottom: 4px;
+  font-size: 14px;
+  letter-spacing: 0.8;
   width: 100px;
-  top: 5px;
-  right: -30px;
+  top: 6px;
+  right: -29px;
   color: #ffffff;
-  font-family: "ptsans";
+  font-family: "ptsans", "Arial", sans-serif;
   font-weight: normal;
   transform: rotate(45deg);
 }
@@ -2220,4 +2308,65 @@ a.private-office:active {
   margin: 37px 0 37px 0;
   color: #000000;
   background-color: #ffffff;
+}
+
+.bounce {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+ 0%, 60%, 75%, 90%, 100% {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+      opacity: 0;
+      transform: translate3d(0px, -3000px, 0px);
+  }
+  60% {
+      opacity: 1;
+      transform: translate3d(0px, 25px, 0px);
+  }
+  75% {
+      transform: translate3d(0px, -10px, 0px);
+  }
+  90% {
+      transform: translate3d(0px, 5px, 0px);
+  }
+  100% {
+      transform: none;
+  }
+}
+
+.iframe-map {
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  margin-left: -470px;
+  box-shadow: 0 0 10px black;
+}
+
+.close-iframe {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/icon-close.svg");
+  background-position: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.close-iframe:hover {
+  background-color: #ffffff;
+}
+
+.static-map {
+  cursor: pointer;
+}
+
+.show-modal {
+  display: block;
 }
