@@ -110,7 +110,7 @@ input[type="radio"].visually-hidden {
 
 .blue-background-header {
   width: 100%;
-  background-color: #32425c;
+  background-color: #293449;
 }
 
 .grey-background-header {
@@ -751,7 +751,7 @@ form {
   line-height: 18px;
   cursor: pointer;
   color: #ffffff;
-  background-color: #32425c;
+  background-color: #293449;
 }
 
 .search-list:hover svg {
