@@ -52,7 +52,9 @@ if (modalIndex) {
 var eventBtnCatalog = document.querySelectorAll(".btn-buy");
 if (eventBtnCatalog) {
   [].forEach.call(eventBtnCatalog, function(entry) {
+    console.log(entry);
     entry.onclick = function(event) {
+      event.preventDefault();
       toggleModal(".add-to-basket");
     };
   });
@@ -60,7 +62,8 @@ if (eventBtnCatalog) {
 
 var modalCatalogContinue = document.querySelector(".continue-shopping");
 if (modalCatalogContinue) {
-  modalCatalogContinue.onclick = function () {
+  modalCatalogContinue.onclick = function (event) {
+    event.preventDefault();
     toggleModal(".add-to-basket");
   };
 }
@@ -100,6 +103,7 @@ var modalMap = document.querySelectorAll(".toggle-modal-map");
 if (modalMap) {
   [].forEach.call(modalMap, function(entry) {
     entry.onclick = function(event) {
+      event.preventDefault();
       toggleModal(".write-us");
     };
   });
@@ -107,6 +111,8 @@ if (modalMap) {
 
 // переключение навигации (доставка/гарантия/кредит)
 var serviceNav = document.querySelectorAll(".btn-service");
+var slides = document.querySelectorAll(".services-content");
+
 [].forEach.call(serviceNav, function(entry) {
   entry.onclick = function(event) {
     var numberPointNav = document.querySelectorAll(".service-navigation span").length;
@@ -114,6 +120,12 @@ var serviceNav = document.querySelectorAll(".btn-service");
       document.querySelectorAll(".service-navigation span")[i].classList.remove("active");
     }
     event.target.classList.add("active");
+
+    [].forEach.call(slides, function(entry) {
+      entry.classList.remove("show-modal");
+    });
+
+    slides[event.target.id].classList.add("show-modal");
   };
 });
 
@@ -145,7 +157,8 @@ if(btnSlider) {
 
 var frameMap = document.querySelector(".static-map");
 if(frameMap) {
-  frameMap.onclick = function() {
+  frameMap.onclick = function(event) {
+    event.preventDefault();
     iFrameMap.classList.add("show-modal");
   }
 }

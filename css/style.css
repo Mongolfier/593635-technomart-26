@@ -95,6 +95,7 @@ input[type="radio"].visually-hidden {
 
 .top-head {
   display: flex;
+  background-color: #293449;
 }
 
 .top-head, .main-head {
@@ -106,6 +107,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #f3f7f9;
+  padding: 47px 0 60px 0;
 }
 
 .blue-background-header {
@@ -116,7 +119,7 @@ input[type="radio"].visually-hidden {
 .grey-background-header {
   width: 100%;
   background-color: #f3f7f9;
-  padding: 47px 0 60px 0;
+  
 }
 
 .page-header {
@@ -285,6 +288,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   line-height: 30px;
   letter-spacing: -0.007em;
+  text-transform: uppercase;
 }
 
 .contacts,
@@ -299,7 +303,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us a,
-.contacts button {
+.open-modal {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -308,7 +312,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us a:hover,
-.contacts button:hover {
+.open-modal:hover {
   background-color: #ca2c37;
 }
 
@@ -316,18 +320,23 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.servises {
+.services {
   background-color: #f4f8f9;
   margin-top: 86px;
 }
 
-.servises h2 {
+.services .container {
+  background-color: #f4f8f9;
+}
+
+.services h2 {
   padding-top: 68px;
   margin-bottom: 28px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 400;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .services-points {
@@ -484,6 +493,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .catalog-perforators-item {
@@ -503,20 +513,20 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 10px #aeb2ba;
 }
 
-.abour-perforators {
+.about-perforators {
   background-color: #f2f6f8;
 }
 
-.abour-perforators h2 {
+.about-perforators h2 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.abour-perforators p {
+.about-perforators p {
   font-size: 13px;
 }
 
-.servises-item p {
+.services-item p {
   font-family: "ptsans", "Arial", sans-serif;
 }
 
@@ -558,6 +568,13 @@ input[type="radio"].visually-hidden {
   margin-top: 11px;
   margin-bottom: 8px;
   color: #999999;
+}
+
+.sells-item img {
+  width: 218px;
+  height: 170px;
+  background-color: powderblue;
+  display: block;
 }
 
 .price {
@@ -641,6 +658,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/drill1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: pink;
 }
 
 .slide-two {
@@ -652,6 +670,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/drill2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: powderblue;
 }
 
 .slide-control {
@@ -695,6 +714,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   z-index: 10;
   display: block;
+  text-transform: uppercase;
 }
 
 .carousel a {
@@ -706,6 +726,7 @@ input[type="radio"].visually-hidden {
   border-radius: 4px;
   text-align: center;
   z-index: 10;
+  text-transform: uppercase;
 }
 
 .carousel a:hover {
@@ -718,6 +739,7 @@ input[type="radio"].visually-hidden {
 
 .footer-wrapper {
   width: 940px;
+  background-color: #32425c;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -775,6 +797,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #293449;
 }
+
+.search-input::placeholder { color: #ffffff; opacity: 1; }
+.search-input::-moz-placeholder { color: #ffffff; opacity: 1; }
+.search-input::-webkit-input-placeholder { color: #ffffff; opacity: 1; }
+.search-input:-ms-input-placeholder { color: #ffffff; opacity: 1; }
+.search-input::-ms-input-placeholder { color: #ffffff; opacity: 1; }
+
 
 .search-list:hover svg {
   fill: rgba(255, 255, 255, 1);
@@ -910,7 +939,6 @@ input[type="radio"].visually-hidden {
 
 .card {
   width: 300px;
-  /*height: 123px;*/
   margin-bottom: 20px;
 }
 
@@ -924,7 +952,6 @@ input[type="radio"].visually-hidden {
 
 .card a {
   width: 135px;
-  /*height: 38px;*/
   margin: 0 0 22px 25px;
   background-color: rgba(0,0,0,0.1);
   display: flex;
@@ -933,6 +960,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 38px; 
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .card a:hover {
@@ -1017,10 +1045,11 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   width: 253px;
-  height: 38px;
+  padding: 10px 0 10px 0;
   margin-right: 25px;
   background-color: #ee3643;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .popular-blog a:focus,
@@ -1030,7 +1059,6 @@ input[type="radio"].visually-hidden {
 
 .sell-hover {
   position: absolute;
-  /*display: none;*/
   top: 0;
   width: 135px;
   height: 84px;
@@ -1068,7 +1096,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 5px 15px #abafb8;
 }
 
-.about-servises {
+.about-services {
   width: 410px;
   font-family: "ptsans","Arial", sans-serif;
   font-size: 13px;
@@ -1091,6 +1119,7 @@ input[type="radio"].visually-hidden {
   margin: 28px 0;
   color: #000;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .about-us p {
@@ -1152,7 +1181,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 32px;
 }
 
-.contacts button {
+.open-modal {
   width: 300px;
   margin-top: 35px;
   height: 38px;
@@ -1165,6 +1194,7 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .left-contacts {
@@ -1172,16 +1202,19 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 }
 
-.logo-footer a {
+.logo-footer {
   display: flex;
   position: relative;
-  justify-content: center;
-  background-color: #ee3643;
   width: 220px;
+  background-color: #ee3643;
+  justify-content: center;
+}
+
+.logo-footer img {
   box-sizing: border-box;
 }
 
-.logo-footer a::after {
+.logo-footer::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -1212,15 +1245,15 @@ input[type="radio"].visually-hidden {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  height: 60px;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin-top: 36px;
 }
 
 .footer-offers {
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  margin-top: 36px;
   align-items: flex-end;
   flex-wrap: wrap;
   padding-left: 27px;
@@ -1229,10 +1262,11 @@ input[type="radio"].visually-hidden {
 .bot-footer .container {
   display: flex;
   align-items: center;
-  height: 107px;
+  padding: 19.5px 0 19.5px 0;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .copyright {
@@ -1283,7 +1317,10 @@ input[type="radio"].visually-hidden {
 .service-information {
   position: relative;
   margin: 70px 0 54px 0;
-  padding-bottom: 102px;
+}
+
+.service-navigation {
+  display: inline-flex;
 }
 
 .service-navigation::after {
@@ -1315,12 +1352,10 @@ input[type="radio"].visually-hidden {
 }
 
 .services-content {
-  position: absolute;
   display: none;
-  top: 0;
-  right: 0;
+  margin-left: 100px;
   width: 620px;
-  padding-bottom: 139px;
+  padding-bottom: 90px;
   background-position: right top;
   background-repeat: no-repeat;
 }
@@ -1350,11 +1385,16 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #fff;
 }
 
-.btn-service:nth-child(1).active ~ .slider .services-content:nth-child(1),
+.tabsNav {
+  width: 240px;
+  margin-bottom: 102px;
+}
+
+/*.btn-service:nth-child(1).active ~ .slider .services-content:nth-child(1),
 .btn-service:nth-child(2).active ~ .slider .services-content:nth-child(2),
 .btn-service:nth-child(3).active ~ .slider .services-content:nth-child(3) {
   display: block;
-}
+}*/
 
 .slider h2 {
   margin: 0 0 34px 0;
@@ -1368,6 +1408,7 @@ input[type="radio"].visually-hidden {
 }
 
 .text-services-delivery {
+  display: block;
   width: 275px;
 }
 
@@ -1393,6 +1434,15 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+.send-request:hover {
+  background-color: #ca2c37;
+}
+
+.send-request:active {
+  background-color: #ba2732;
 }
 
 .services-content h2 {
@@ -1705,6 +1755,7 @@ a.private-office:active {
   font-weight: normal;
   background-color: #f2f6f8;
   color: #3e3f40;
+  text-transform: uppercase;
 }
 
 .filters {
@@ -1916,6 +1967,7 @@ a.private-office:active {
   font-weight: bold;
   top: 3px;
   position: absolute;
+  text-transform: uppercase;
 }
 
 .type-charge input[type="radio"] {
@@ -1934,6 +1986,7 @@ a.private-office:active {
   cursor: pointer;
   color: #000000;
   opacity: 0.8;
+  text-transform: uppercase;
 }
 
 .type-charge label:hover {
@@ -1964,8 +2017,7 @@ a.private-office:active {
 
 .filter-button {
   width: 138px;
-  height: 38px;
-  background: #fff;
+  background: #ffffff;
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   border: 1px solid #e5e5e5;
@@ -1974,10 +2026,18 @@ a.private-office:active {
   align-items: center;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 13px;
+  padding: 11.5px 0 11.5px 0;
+  text-transform: uppercase;
 }
 
 .filter-button:hover {
-  background-color: #ca2c37;
+  border: 1px solid #bdc6ca;
+}
+
+.filter-button:active {
+  border: 1px solid #ee3643;
+  outline: 1px dotted #000000;
 }
 
 .products {
@@ -2012,6 +2072,7 @@ a.private-office:active {
   font-weight: normal;
   color: #acaaa5;
   border-bottom: 1px dotted #ee3643;
+  text-transform: uppercase;
 }
 
 .criterion-sorting-list a:hover {
@@ -2077,6 +2138,10 @@ a.private-office:active {
 }
 
 .catalog-perforators-item img {
+  width: 218px;
+  height: 170px;
+  background-color: powderblue;
+  display: block;
   border-style: none;
 }
 
@@ -2128,7 +2193,6 @@ a.private-office:active {
 
 .buy-menu {
   position: absolute;
-  /*display: none;*/
   top: 0;
   width: 135px;
   height: 84px;
@@ -2138,13 +2202,14 @@ a.private-office:active {
 
 .btn-buy {
   margin-bottom: 8px;
-  height: 38px;
   box-shadow: inset 0 -3px 0 #367315;
   background-color: #63a63e;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  line-height: 18px;
+  padding: 10px 0 10px 0;
   border-radius: 4px;
   color: #ffffff;
   text-transform: uppercase;
@@ -2161,7 +2226,6 @@ a.private-office:active {
 }
 
 .btn-bookmark {
-  height: 32px;
   border: 3px solid #63a63e;
   background-color: #ffffff;
   color: #32425c;
@@ -2169,6 +2233,8 @@ a.private-office:active {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  line-height: 18px;
+  padding: 7px 0 7px 0;
   border-radius: 4px;
   color: #32425c;
   text-decoration: none;
@@ -2201,13 +2267,14 @@ a.private-office:active {
   justify-content: center;
   align-items: center;
   width: 36px;
-  height: 36px;
+  padding: 9px 0 9px 0;
   border-radius: 5%;
   font: 13px/18px "ptsans", "Arial", sans-serif;
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #e5e5e5;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .pagination-item:last-child a {
@@ -2229,20 +2296,21 @@ a.private-office:active {
   outline: 1px dotted #000000;
 }
 
-.abour-perforators {
+.about-perforators {
   background-color: #f2f6f8;
   padding-bottom: 56px;
 }
 
-.abour-perforators h2 {
+.about-perforators h2 {
   padding-top: 69px;
   font-size: 30px;
   line-height: 24px;
   margin: 28px 0;
   color: #000000;
   font-weight: normal;
+  text-transform: uppercase;
 }
-.abour-perforators p {
+.about-perforators p {
   font: 13px/24px "ptsans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.007em;
@@ -2340,16 +2408,19 @@ a.private-office:active {
 .iframe-map {
   display: none;
   position: fixed;
-  top: 5%;
+  top: 15%;
   left: 50%;
+  width: 940px;
+  height: 447px;
   margin-left: -470px;
   box-shadow: 0 0 10px black;
+  z-index: 999;
 }
 
 .close-iframe {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 25px;
+  right: 25px;
   width: 28px;
   height: 28px;
   background-image: url("../img/icon-close.svg");
@@ -2360,11 +2431,15 @@ a.private-office:active {
 }
 
 .close-iframe:hover {
-  background-color: #ffffff;
+  box-shadow: 0 0 5px black;
 }
 
 .static-map {
+  display: block;
   cursor: pointer;
+  width: 300px;
+  height: 158px;
+  background-color: khaki;
 }
 
 .show-modal {
