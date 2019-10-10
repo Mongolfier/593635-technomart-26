@@ -101,7 +101,6 @@ input[type="radio"].visually-hidden {
 }
 
 .top-head, .main-head {
-  width: 940px;
   margin: 0 auto;
 }
 
@@ -310,6 +309,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 940px;
   margin: 0 auto;
+  padding: 0 10px 0 10px;
 }
 
 .contacts h2,
@@ -406,6 +406,10 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer {
+  background-color: #32425c;
+}
+
+.page-footer .container {
   background-color: #32425c;
 }
 
@@ -600,7 +604,7 @@ input[type="radio"].visually-hidden {
 .sells-item p {
   margin: auto 25px;
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .sells-item del {
@@ -795,7 +799,6 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-wrapper {
-  width: 940px;
   background-color: #32425c;
   margin: 0 auto;
   display: -webkit-box;
@@ -856,6 +859,8 @@ input[type="radio"].visually-hidden {
   height: 42px;
   line-height: 18px;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   color: #ffffff;
   background-color: #293449;
 }
@@ -1407,7 +1412,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 19.5px 0 19.5px 0;
+  padding: 19.5px 10px 19.5px 10px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1455,7 +1460,7 @@ input[type="radio"].visually-hidden {
 }
 
 .communication {
-  width: 140px;
+  min-width: 140px;
   margin-right: 48px;
 }
 
@@ -2624,10 +2629,12 @@ a.private-office:active {
 
 .garantee-frame {
   background-image: url("../img/service-garantee.png");
+  background-position: right bottom;
 }
 
 .credit-frame {
   background-image: url("../img/service-credit.png");
+  background-position: right 0;
 }
 
 .services-content.show-modal {
