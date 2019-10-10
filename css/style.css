@@ -2595,6 +2595,10 @@ a.private-office:active {
 
 .about-perforators {
   background-color: #f2f6f8;
+}
+
+.about-perforators .container {
+  background-color: #f2f6f8;
   padding-bottom: 56px;
 }
 
